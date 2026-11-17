@@ -1,0 +1,29 @@
+{
+  "name": "jing-tou-qian",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host 127.0.0.1",
+    "build": "tsc --noEmit && vite build && node scripts/copy-public.mjs && node scripts/build-offline.mjs && node scripts/build-worker.mjs",
+    "build:pages": "tsc --noEmit && vite build && node scripts/copy-public.mjs && node scripts/build-offline.mjs",
+    "preview": "vite preview --host 127.0.0.1",
+    "test": "node --experimental-strip-types --test tests/*.test.ts",
+    "prepare:model": "node scripts/prepare-model.mjs",
+    "prepare:chinese": "node scripts/prepare-paraformer.mjs --publish",
+    "benchmark:asr": "node scripts/benchmark-asr.mjs"
+  },
+  "dependencies": {
+    "@sherpaw/asr": "0.3.0",
+    "pinyin-pro": "3.29.5",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0"
+  },
+  "devDependencies": {
+    "@types/react": "^19.1.0",
+    "@types/react-dom": "^19.1.0",
+    "@vitejs/plugin-react": "^5.0.0",
+    "typescript": "^5.9.0",
+    "vite": "^7.1.0"
+  }
+}

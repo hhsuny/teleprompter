@@ -1,0 +1,61 @@
+{
+  "version": "zipformer-zh-14m-20230223-int8-1",
+  "architecture": "zipformer-transducer",
+  "source": "https://github.com/k2-fsa/sherpa-onnx/releases/tag/asr-models",
+  "files": [
+    {
+      "name": "encoder.onnx",
+      "size": 21621684,
+      "chunks": [
+        {
+          "url": "encoder.onnx.0.bin",
+          "size": 8388608,
+          "sha256": "8825688debab56952e3111c339894a41654aba13bd7383340bcfbb521cfd2e54"
+        },
+        {
+          "url": "encoder.onnx.1.bin",
+          "size": 8388608,
+          "sha256": "35825619284d73f990057f14066609792945515aa844d3419f691d0f69eaff38"
+        },
+        {
+          "url": "encoder.onnx.2.bin",
+          "size": 4844468,
+          "sha256": "531e01e2c6964ad6c5148afbe7210ba2e92b8b29e76d9df565d4d0713ede9f1a"
+        }
+      ]
+    },
+    {
+      "name": "decoder.onnx",
+      "size": 7509745,
+      "chunks": [
+        {
+          "url": "decoder.onnx.0.bin",
+          "size": 7509745,
+          "sha256": "5ee0f03a2768ff1d5c83ef3a493243c7935d316cd41280037b14783a3467cc78"
+        }
+      ]
+    },
+    {
+      "name": "joiner.onnx",
+      "size": 1795562,
+      "chunks": [
+        {
+          "url": "joiner.onnx.0.bin",
+          "size": 1795562,
+          "sha256": "a7cf9d82757bdcf786059454495a9ca95e4bd7347f72473fc08d794475c36169"
+        }
+      ]
+    },
+    {
+      "name": "tokens.txt",
+      "size": 48697,
+      "chunks": [
+        {
+          "url": "tokens.txt.0.bin",
+          "size": 48697,
+          "sha256": "8b294db9045d6e5f94647f4c1eec1af4da143a75053c399611444b378ff966ac"
+        }
+      ]
+    }
+  ]
+}

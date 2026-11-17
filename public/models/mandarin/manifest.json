@@ -1,0 +1,44 @@
+{
+  "version": "mandarin-ctc-int8-2025-04-01",
+  "architecture": "zipformer2-ctc",
+  "source": "https://huggingface.co/csukuangfj/sherpa-onnx-streaming-zipformer-small-ctc-zh-int8-2025-04-01/resolve/a5f60fe",
+  "files": [
+    {
+      "name": "model.int8.onnx",
+      "size": 26342340,
+      "chunks": [
+        {
+          "url": "model.int8.onnx.0.bin",
+          "size": 8388608,
+          "sha256": "06e8cf8eca24ea4abf2db0ebaa59dcdc48d608013913350675e03a75e2bfed2f"
+        },
+        {
+          "url": "model.int8.onnx.1.bin",
+          "size": 8388608,
+          "sha256": "3dab1806d2c15d88dca6eb07440a8b76b378706a8046202a25721691df9b3e51"
+        },
+        {
+          "url": "model.int8.onnx.2.bin",
+          "size": 8388608,
+          "sha256": "5946da99b871b6ee8f4fc34c09797606f0778698b3e46d51ffd45ceafb068153"
+        },
+        {
+          "url": "model.int8.onnx.3.bin",
+          "size": 1176516,
+          "sha256": "cc6648c81458d4db96e5b0c8cecfaff9f795090b6b5ae61580d85367d6725619"
+        }
+      ]
+    },
+    {
+      "name": "tokens.txt",
+      "size": 13366,
+      "chunks": [
+        {
+          "url": "tokens.txt.0.bin",
+          "size": 13366,
+          "sha256": "6fed8c6c248516f38e7faa19404b57413e8ce259f1cbc1fa4aebc86eac32fdfd"
+        }
+      ]
+    }
+  ]
+}

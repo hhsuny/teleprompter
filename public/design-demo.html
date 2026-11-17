@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#000000">
+  <title>镜头前 · 设计预览</title>
+  <link rel="stylesheet" href="./design-demo/style.css">
+</head>
+<body>
+  <svg class="symbols" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><defs>
+    <symbol id="i-camera" viewBox="0 0 24 24"><path d="M8 5l1.5-2h5L16 5h3a2 2 0 0 1 2 2v12H3V7a2 2 0 0 1 2-2z"/><circle cx="12" cy="12" r="4"/></symbol>
+    <symbol id="i-script" viewBox="0 0 24 24"><path d="M6 3h9l4 4v14H5V3zM14 3v5h5M8 12h8M8 16h6"/></symbol>
+    <symbol id="i-video" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="16" rx="3"/><path d="M9 4v16M15 4v16M3 9h6m6 0h6M3 15h6m6 0h6"/></symbol>
+    <symbol id="i-settings" viewBox="0 0 24 24"><path d="M3 6h18M3 12h18M3 18h18"/><circle cx="8" cy="6" r="2"/><circle cx="16" cy="12" r="2"/><circle cx="9" cy="18" r="2"/></symbol>
+    <symbol id="i-flip" viewBox="0 0 24 24"><path d="M3 8h14l-3-3m7 11H7l3 3M3 8v6m18 2v-6"/></symbol>
+    <symbol id="i-chevron" viewBox="0 0 24 24"><path d="m9 5 7 7-7 7"/></symbol>
+    <symbol id="i-plus" viewBox="0 0 24 24"><path d="M12 4v16M4 12h16"/></symbol>
+    <symbol id="i-close" viewBox="0 0 24 24"><path d="m6 6 12 12M18 6 6 18"/></symbol>
+    <symbol id="i-back" viewBox="0 0 24 24"><path d="m15 5-7 7 7 7"/></symbol>
+    <symbol id="i-check" viewBox="0 0 24 24"><path d="m5 12 4 4L19 6"/></symbol>
+    <symbol id="i-type" viewBox="0 0 24 24"><path d="M3 6h12M9 6v14M1 6v3M17 6v3M15 13h8M19 13v7"/></symbol>
+    <symbol id="i-mic" viewBox="0 0 24 24"><rect x="9" y="2" width="6" height="13" rx="3"/><path d="M5 10v2a7 7 0 0 0 14 0v-2M12 19v3"/></symbol>
+    <symbol id="i-mirror" viewBox="0 0 24 24"><path d="M12 2v20M3 17l5-10v10zm18 0L16 7v10z"/></symbol>
+    <symbol id="i-search" viewBox="0 0 24 24"><circle cx="10" cy="10" r="6"/><path d="m15 15 6 6"/></symbol>
+    <symbol id="i-play" viewBox="0 0 24 24"><path d="m9 5 10 7-10 7z"/></symbol>
+    <symbol id="i-brand" viewBox="0 0 24 24"><path d="M8 3H3v5m13-5h5v5M3 16v5h5m13-5v5h-5"/><circle cx="12" cy="12" r="3"/></symbol>
+  </defs></svg>
+  <aside class="desktop-note"><div class="wordmark"><svg><use href="#i-brand"/></svg>镜头前</div><h1>把画面<br>留给表达。</h1><p>深色拍摄，浅色创作。<br>为一个人拍好一段口播而设计。</p><span class="preview-label">可交互设计预览</span><p class="desktop-help">试试底部导航、字号和拍摄按钮。<br>示例画面由 AI 生成。</p><a href="./">打开当前正式版 <span>↗</span></a></aside>
+  <main class="studio" data-page="camera">
+    <div class="preview-notice"><span>设计预览 · 示例画面</span><a href="./">原版 ↗</a></div>
+    <section id="camera-page" class="page camera-page" aria-label="相机">
+      <div class="viewfinder"><img src="./design-demo/preview.png" alt="AI 生成的口播人物示例，不是实时取景" id="preview-photo"><div class="photo-fallback">镜头前<span>取景画面示例</span></div></div>
+      <header class="camera-top"><span class="camera-brand"><svg><use href="#i-brand"/></svg>镜头前</span><div class="top-actions"><button id="spec-button" class="spec-button" aria-label="调整视频规格"><span id="spec-label">1080P <b>60</b></span><svg><use href="#i-chevron"/></svg></button><button class="icon-button" data-sheet="appearance" aria-label="调整提词外观"><svg><use href="#i-type"/></svg></button></div></header>
+      <div class="prompter" id="prompter" aria-label="提词示例"><div class="reading-mark"></div><div class="prompt-window"><div class="prompt-copy" id="prompt-copy"><p class="past">每一次开口，</p><p class="current">都值得被认真记录。</p><p>不用急着说完，</p><p>按照自己的节奏就好。</p><p>把想说的话，</p><p>自然地讲给镜头听。</p></div></div><div class="prompt-footer"><span id="follow-status"><i></i>语音跟随 · 效果演示</span><button data-sheet="appearance" aria-label="调整字号">Aa</button></div></div>
+      <div class="record-indicator" id="record-indicator" hidden><span></span><time id="record-time">00:00</time><small>演示</small></div>
+      <div class="countdown" id="countdown" hidden aria-live="polite"></div>
+      <div class="camera-bottom"><button class="active-script" data-nav="scripts"><svg><use href="#i-script"/></svg><span id="active-script-title">第一条口播</span><svg class="mini-chevron"><use href="#i-chevron"/></svg></button><div class="zoom-controls" role="group" aria-label="倍率效果预览"><button class="selected" data-zoom="1" aria-pressed="true">1×</button><button data-zoom="2" aria-pressed="false">2×</button><button data-zoom="3" aria-pressed="false">3×</button></div><div class="capture-controls"><button class="side-control" id="mirror-button" aria-pressed="true"><svg><use href="#i-mirror"/></svg><span>镜像</span></button><button id="record-button" class="record-button" aria-label="演示开始拍摄"><span></span></button><button class="side-control" id="flip-button"><svg><use href="#i-flip"/></svg><span id="lens-label">前置</span></button></div></div>
+      <button id="stop-button" class="stop-button" aria-label="结束拍摄演示" hidden><span></span></button>
+    </section>
+    <section id="scripts-page" class="page library-page" aria-label="稿件" hidden><header class="library-heading"><div><span class="eyebrow">随时开始下一条</span><h1>我的稿件</h1></div><button class="add-button" id="new-script" aria-label="新建示例稿件"><svg><use href="#i-plus"/></svg></button></header><label class="search"><svg><use href="#i-search"/></svg><input type="search" placeholder="搜索稿件" id="script-search" aria-label="搜索稿件"></label><button class="continue-script" data-edit="0"><span class="continue-icon"><svg><use href="#i-script"/></svg></span><span><small>继续上次的稿件</small><strong id="continue-title">第一条口播</strong><em>打开稿件，准备拍摄</em></span><svg><use href="#i-chevron"/></svg></button><div class="list-heading"><h2>全部稿件</h2><span id="script-count">3 篇</span></div><div id="script-list" class="script-list"></div><p class="library-footnote">示例稿件仅用于预览，本次修改不会保存。</p></section>
+    <section id="media-page" class="page library-page" aria-label="视频" hidden><header class="library-heading"><div><span class="eyebrow">每一次表达，都在这里</span><h1>我的视频</h1></div><span class="count-badge">示例</span></header><div class="media-summary"><strong>3 <span>段视频</span></strong><span>156 MB</span></div><div class="sort-bar" role="group" aria-label="示例视频排序"><button class="selected" data-sort="recent" aria-pressed="true">最近</button><button data-sort="duration" aria-pressed="false">时长</button><button data-sort="size" aria-pressed="false">大小</button></div><div class="list-heading"><h2>今天</h2><span>画面示意</span></div><div id="video-grid" class="video-grid"></div><p class="library-footnote">这些是示例卡片，没有真实视频文件。</p></section>
+    <section id="settings-page" class="page library-page settings-page" aria-label="设置" hidden><header class="library-heading"><div><span class="eyebrow">按你的习惯拍摄</span><h1>设置</h1></div></header><h2 class="settings-heading">相机</h2><div class="settings-group"><button class="setting-row" data-sheet="specs"><span><strong>视频规格</strong><small>拍摄前轻点即可调整</small></span><span class="setting-value" id="settings-spec">1080P / 60 帧</span><svg><use href="#i-chevron"/></svg></button><div class="setting-row"><span><strong>镜像前置预览</strong><small>像照镜子一样自然</small></span><button class="switch on" id="mirror-setting" role="switch" aria-checked="true" aria-label="镜像前置预览"></button></div><div class="setting-row"><span><strong>镜像成片</strong><small>在正式版中控制导出方向</small></span><button class="switch on" id="export-mirror" role="switch" aria-checked="true" aria-label="镜像成片示例"></button></div></div><h2 class="settings-heading">提词</h2><div class="settings-group"><button class="setting-row" data-sheet="appearance"><span><strong>字号与位置</strong><small>靠近镜头，看着更自然</small></span><span class="setting-value" id="settings-font">30 px</span><svg><use href="#i-chevron"/></svg></button><button class="setting-row" data-sheet="script"><span><strong>当前稿件</strong><small id="settings-script">第一条口播</small></span><svg><use href="#i-chevron"/></svg></button></div><div class="privacy-note"><svg><use href="#i-check"/></svg><p>专注拍摄，轻松表达。<span>这是视觉 Demo，设置不影响正式版。</span></p></div></section>
+    <nav class="bottom-nav" aria-label="主导航"><button class="selected" data-nav="camera" aria-current="page"><svg><use href="#i-camera"/></svg><span>拍摄</span></button><button data-nav="scripts"><svg><use href="#i-script"/></svg><span>稿件</span></button><button data-nav="media"><svg><use href="#i-video"/></svg><span>视频</span></button><button data-nav="settings"><svg><use href="#i-settings"/></svg><span>设置</span></button></nav>
+    <div class="sheet-backdrop" id="sheet-backdrop" hidden></div><dialog class="sheet" id="settings-sheet" aria-modal="true" aria-labelledby="sheet-title"><div class="sheet-handle"></div><header><h2 id="sheet-title">提词外观</h2><button class="sheet-close icon-button" aria-label="关闭面板"><svg><use href="#i-close"/></svg></button></header><div id="sheet-content"></div></dialog>
+    <div class="toast" id="toast" role="status" hidden></div>
+  </main>
+  <script src="./design-demo/app.js"></script>
+</body>
+</html>

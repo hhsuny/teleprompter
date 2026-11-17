@@ -1,0 +1,177 @@
+{
+  "version": "paraformer-zh-online-int8-v1",
+  "architecture": "paraformer",
+  "label": "免费中文增强 · Paraformer",
+  "license": "Apache-2.0",
+  "source": "https://huggingface.co/csukuangfj/streaming-paraformer-zh",
+  "files": [
+    {
+      "name": "encoder.onnx",
+      "size": 165462184,
+      "chunks": [
+        {
+          "url": "encoder.onnx.0.bin",
+          "size": 8388608,
+          "sha256": "744a6b66780c5fd0edb38db0e27d41c9d930b3b8510a9ec31e2cbe132ad73119"
+        },
+        {
+          "url": "encoder.onnx.1.bin",
+          "size": 8388608,
+          "sha256": "05093c6eed201e92c88ada087a3a42ad080a8110c5ee0fdd6e76644a17a59bbb"
+        },
+        {
+          "url": "encoder.onnx.2.bin",
+          "size": 8388608,
+          "sha256": "fc53de778e0d94c056c1ad7455a9796c8195206ad065f7624a1971d1317a47c0"
+        },
+        {
+          "url": "encoder.onnx.3.bin",
+          "size": 8388608,
+          "sha256": "6cd70acc7aa80be25dde434725d19f4a5481823fe708c0306e6ab4119150fbc6"
+        },
+        {
+          "url": "encoder.onnx.4.bin",
+          "size": 8388608,
+          "sha256": "1374a3d5ef6ed9891029b3320af116de077d7869b6ad9fc4fbb868ace7e13a69"
+        },
+        {
+          "url": "encoder.onnx.5.bin",
+          "size": 8388608,
+          "sha256": "9ecec68db434d96d0e9305d1eb32b80946d9faa36dbd5ce24fa08dd4fbe518d8"
+        },
+        {
+          "url": "encoder.onnx.6.bin",
+          "size": 8388608,
+          "sha256": "2e6fac3784951fb4db5e7fd3c54d7cf67018c96bc73fad53506c342aeabdda11"
+        },
+        {
+          "url": "encoder.onnx.7.bin",
+          "size": 8388608,
+          "sha256": "5018b010576dbe740325fa877f364e4ee567f379d4e0798c8e3afb55f123f4a2"
+        },
+        {
+          "url": "encoder.onnx.8.bin",
+          "size": 8388608,
+          "sha256": "ae8aa444469332556401bf1d6e74b530c043f0d028214b6bbfb3b5128c98b09c"
+        },
+        {
+          "url": "encoder.onnx.9.bin",
+          "size": 8388608,
+          "sha256": "a1ddc754a761a1d7ac450c2653f989234e15506a7640ef5687edc981fa82fc8e"
+        },
+        {
+          "url": "encoder.onnx.10.bin",
+          "size": 8388608,
+          "sha256": "9a02642898c78ae694a6abb50c37776ed07bfdc795116cc7a9f6fed403d825c6"
+        },
+        {
+          "url": "encoder.onnx.11.bin",
+          "size": 8388608,
+          "sha256": "327f0e5cf1a5d436a1f6f5ea8e81eefafed88bda186656c737c05f6d3968ac92"
+        },
+        {
+          "url": "encoder.onnx.12.bin",
+          "size": 8388608,
+          "sha256": "448c9fc8903ea1954a13d05513b4fc6a9d992f37c19ea986e19d543b73157974"
+        },
+        {
+          "url": "encoder.onnx.13.bin",
+          "size": 8388608,
+          "sha256": "56702afa66f2bc0d4829b97ff7930d4c339ba7791186cae13ac3c0070de8e272"
+        },
+        {
+          "url": "encoder.onnx.14.bin",
+          "size": 8388608,
+          "sha256": "ba60662a7fe9217ec824dd271d38d974e26ec9a0fd90628cd9bf9f9042343c6a"
+        },
+        {
+          "url": "encoder.onnx.15.bin",
+          "size": 8388608,
+          "sha256": "f5225f399c7d572009be024ed3dfc681789f5259cfadb3ac825bb9ad93cb5ba7"
+        },
+        {
+          "url": "encoder.onnx.16.bin",
+          "size": 8388608,
+          "sha256": "d016f673f1c37fa466bf4dfee2e502f2ecad753b1b067d413c8025e96c7dc93a"
+        },
+        {
+          "url": "encoder.onnx.17.bin",
+          "size": 8388608,
+          "sha256": "267e1306c71c23df06adf098c9f029bbb325d4b6fb5d1a50899c010deb3caa83"
+        },
+        {
+          "url": "encoder.onnx.18.bin",
+          "size": 8388608,
+          "sha256": "254d9da15805ae0d6cc8c293158f66eb6332a12f76c63b3493abcbff70708f5e"
+        },
+        {
+          "url": "encoder.onnx.19.bin",
+          "size": 6078632,
+          "sha256": "0f45dda092fe89f1ea1018ecfb7ff05f9fd0a7c5ddfbad9de16c252cfb2ee5dd"
+        }
+      ]
+    },
+    {
+      "name": "decoder.onnx",
+      "size": 71664561,
+      "chunks": [
+        {
+          "url": "decoder.onnx.0.bin",
+          "size": 8388608,
+          "sha256": "af3b34d3d38f5306023eab4873356ec376a4442d45243a15f918f6e9617e5338"
+        },
+        {
+          "url": "decoder.onnx.1.bin",
+          "size": 8388608,
+          "sha256": "bc5c4874186b6a91f741eee57029062d07b441c4691bb2ee4b57703d8df2417e"
+        },
+        {
+          "url": "decoder.onnx.2.bin",
+          "size": 8388608,
+          "sha256": "c58b3d5b0ef14d9c1a4351b93e1c707cfd12670f0f566bdcaa0032c22c648e41"
+        },
+        {
+          "url": "decoder.onnx.3.bin",
+          "size": 8388608,
+          "sha256": "d14358c5712bde604747a50c8e74e0e269a5f32f9b191d4562bc043953a9dff8"
+        },
+        {
+          "url": "decoder.onnx.4.bin",
+          "size": 8388608,
+          "sha256": "dbe4b9b3d7b6771c841bd03c7b8950e7614bd0e8264af5310ac64aedb32638a3"
+        },
+        {
+          "url": "decoder.onnx.5.bin",
+          "size": 8388608,
+          "sha256": "af355cd1312051f6a9266e6aac0d815298fd560fcaec34b9b0c563109cdafd6b"
+        },
+        {
+          "url": "decoder.onnx.6.bin",
+          "size": 8388608,
+          "sha256": "cf2de5bb5cf802ce5c0d58c3ddcdc706692aef71a33c4a75b424cec5fd5a2c9e"
+        },
+        {
+          "url": "decoder.onnx.7.bin",
+          "size": 8388608,
+          "sha256": "fe91ff1b5b40f730fab9a51e3a66a5603db667013277769adc2fd50bc2e5afd5"
+        },
+        {
+          "url": "decoder.onnx.8.bin",
+          "size": 4555697,
+          "sha256": "6435bcb6283990925b25a46b5448e2edee14873a43b993c5e4b0f1a82ed25530"
+        }
+      ]
+    },
+    {
+      "name": "tokens.txt",
+      "size": 75756,
+      "chunks": [
+        {
+          "url": "tokens.txt.0.bin",
+          "size": 75756,
+          "sha256": "59aba8873a2ed1e122c25fee421e25f283b63290efbde85c1f01a853d83cb6e6"
+        }
+      ]
+    }
+  ]
+}

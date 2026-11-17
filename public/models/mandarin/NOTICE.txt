@@ -1,0 +1,6 @@
+Streaming Mandarin Zipformer small CTC INT8 model
+
+Original model: https://huggingface.co/csukuangfj/icefall-streaming-zipformer-small-ctc-zh-2025-04-01
+ONNX distribution: https://huggingface.co/csukuangfj/sherpa-onnx-streaming-zipformer-small-ctc-zh-int8-2025-04-01
+License: Apache License 2.0. See /SHERPAW-LICENSE.txt for the license text.
+The web app redistributes the ONNX and vocabulary bytes in smaller chunks.

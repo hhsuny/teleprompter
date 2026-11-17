@@ -1,0 +1,24 @@
+镜头前 uses the following open-source components:
+
+React / React DOM: MIT, https://github.com/facebook/react
+Sherpaw ASR 0.3.0: Apache License 2.0, Copyright 2025 Makito.
+https://github.com/moeru-ai/sherpaw
+Sherpa-ONNX: Apache License 2.0, https://github.com/k2-fsa/sherpa-onnx
+ONNX Runtime (included in the ASR WASM): MIT, https://github.com/microsoft/onnxruntime
+
+Model: small bilingual Zipformer, official sherpa-onnx 2023-02-16 release.
+Source model: https://huggingface.co/csukuangfj/k2fsa-zipformer-bilingual-zh-en-t
+Release: https://github.com/k2-fsa/sherpa-onnx/releases/tag/asr-models
+
+Model weights are bundled separately from application code and are not claimed
+as original work. Upstream source and attribution links are retained here.
+
+Default Chinese-enhanced model: streaming Paraformer INT8 (Apache License 2.0).
+Original: damo/speech_paraformer_asr_nat-zh-cn-16k-common-vocab8404-online
+https://www.modelscope.cn/models/damo/speech_paraformer_asr_nat-zh-cn-16k-common-vocab8404-online
+ONNX conversion by Fangjun Kuang / k2-fsa:
+https://huggingface.co/csukuangfj/streaming-paraformer-zh
+Model tensors are unchanged. Encoder metadata and token IDs are added following
+the author's add-model-metadata.py and test.py conversion instructions.
+Previous Zipformer assets remain in source for baseline comparisons, but are not
+included in the current deployment. Refresh old pages to load the new worker.
